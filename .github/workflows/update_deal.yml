@@ -1,0 +1,35 @@
+name: Update Corporate Sunday Deal
+
+on:
+  schedule:
+    - cron: '0 6,12 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-deal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Run Scraper
+        run: python scraper.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add deal.json index.html
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Sunday deal data [skip ci]" && git push)
