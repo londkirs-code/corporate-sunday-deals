@@ -22,7 +22,6 @@ def scrape_deal():
             data = page.evaluate("""() => {
                 const result = { title: '', banner: '', deals: [] };
                 result.title = document.querySelector('h1')? document.querySelector('h1').innerText.trim() : 'Corporate SUNDAY';
-
                 const bodyText = document.body.innerText;
                 const match = bodyText.match(/בכל יום ראשון[^\n]{0,80}/);
                 if (match) result.banner = match[0];
@@ -30,7 +29,6 @@ def scrape_deal():
                     const el = Array.from(document.querySelectorAll('p, h2, div')).find(e => e.innerText.includes('יום ראשון') && e.innerText.length < 200);
                     if (el) result.banner = el.innerText.trim();
                 }
-
                 const seen = new Set();
                 document.querySelectorAll('a[href*="Benefit"]').forEach(a => {
                     if (seen.has(a.href)) return;
@@ -68,7 +66,6 @@ def scrape_deal():
         finally:
             browser.close()
 
-    # אם אין מבצעים - תחזיר לפחות את הבלוק הקבוע
     if not deals:
         deals = [{
             'title': banner_text if banner_text else 'בכל יום ראשון - מבצע חדש ב-Corporate SUNDAY',
@@ -89,7 +86,6 @@ def build_html(deals, last_checked, url, page_title):
         desc_html = f'<div class="desc">{d["description"]}</div>' if d.get('description') else ''
         btn_text = 'למעבר לדף המבצעים' if is_banner else 'לפרטים והטבה'
         btn_class = 'btn banner-btn' if is_banner else 'btn'
-
         cards_html += f'<div class="deal-card {"banner-card" if is_banner else ""}">{img_html}<div class="deal-title">{d["title"]}</div>{desc_html}<a href="{d["link"]}" class="{btn_class}" target="_blank">{btn_text}</a></div>\n'
 
     html = f"""<!DOCTYPE html>
@@ -110,7 +106,6 @@ h1{{color:#d63384;text-align:center;font-size:1.8rem}}
 .btn{{display:block;background:#000;color:#fff;padding:12px;border-radius:8px;text-align:center;text-decoration:none;font-weight:bold}}
 .banner-card{{background:linear-gradient(135deg,#fff0f5 0%,#ffe4ec 100%);border:2px solid #d63384}}
 .banner-btn{{background:#d63384}}
-.banner-card.deal-title{{color:#d63384;font-size:1.3rem}}
 </style>
 </head>
 <body>
