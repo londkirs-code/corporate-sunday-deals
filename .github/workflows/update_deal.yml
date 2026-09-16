@@ -2,7 +2,8 @@ name: Update Corporate Sunday Deal
 
 on:
   schedule:
-    - cron: '0 6 * * 0'
+    - cron: '0 21 * * 6' # 00:00 ראשון בקיץ - שעון קיץ ישראל UTC+3
+    - cron: '0 22 * * 6' # 00:00 ראשון בחורף - שעון חורף ישראל UTC+2
   workflow_dispatch:
 
 permissions:
@@ -34,8 +35,8 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add deal.json index.html
-          if ! git diff --cached --quiet; then
-            git commit -m "Auto-update Sunday deal [skip ci]"
+          if! git diff --cached --quiet; then
+            git commit -m "Auto-update Sunday deal - $(TZ='Asia/Jerusalem' date) [skip ci]"
             git push
           else
             echo "No changes to commit"
