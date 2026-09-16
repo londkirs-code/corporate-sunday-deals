@@ -11,18 +11,20 @@ permissions:
 jobs:
   update-deal:
     runs-on: ubuntu-latest
-    container:
-      image: mcr.microsoft.com/playwright/python:v1.63.0-jammy
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fix git safe directory
-        run: git config --global --add safe.directory $GITHUB_WORKSPACE
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Install Playwright browser
+        run: playwright install chromium --with-deps
 
       - name: Run Scraper
         run: python scraper.py
@@ -32,7 +34,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add deal.json index.html
-          if! git diff --cached --quiet; then
-            git commit -m "Auto-update Sunday deal [skip ci]"
-            git push
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Sunday deal [skip ci]" && git push)            git push
           fi
