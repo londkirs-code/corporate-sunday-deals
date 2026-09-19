@@ -2,7 +2,7 @@ name: Update Corporate Sunday Deal
 
 on:
   schedule:
-    - cron: '0 21 * * 6' # 00:00 ראשון בקיץ - שעון קיץ ישראל UTC+3
+    - cron: '0 0 * * 6' # 00:00 ראשון בקיץ - שעון קיץ ישראל UTC+3
     - cron: '0 22 * * 6' # 00:00 ראשון בחורף - שעון חורף ישראל UTC+2
   workflow_dispatch:
 
