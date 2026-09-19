@@ -12,24 +12,18 @@ permissions:
 jobs:
   update-deal:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Jerusalem  # <-- זה הכי חשוב
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Install Playwright browser
-        run: playwright install chromium --with-deps
-
-      - name: Run Scraper
-        run: python scraper.py
-
+          python-version: '3.11'
+      - run: |
+          pip install playwright
+          playwright install chromium --with-deps
+      - run: python scraper.py
+      
       - name: Commit and push if changed
         run: |
           git config --global user.name "GitHub Actions Bot"
