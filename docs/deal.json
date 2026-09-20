@@ -1,17 +1,27 @@
 {
-  "last_checked": "2026-09-20 09:13:54",
+  "last_checked": "2026-09-20 10:25:35",
   "deals": [
     {
-      "title": "הטבות ישראכרט פרימיום",
-      "image": "",
-      "link": "https://benefits.isracard.co.il/",
-      "updated_at": "2026-09-20 09:13:54"
-    },
-    {
       "title": "שובר לספר בסטימצקי",
+      "details_raw": "לרכישה ב-₪40\nבשווי ₪98",
+      "price": "לרכישה ב-₪40",
+      "value": "בשווי ₪98",
       "image": "https://styleproductionpublic.blob.core.windows.net/files/560/FILE-20180108-0722HQXMJBPAA6ZW_350.jpg",
       "link": "https://www.mycorporate.co.il/?page=Benefit&uuid=C1028F64-94B7-4056-B3B4-5AE1FF68",
-      "updated_at": "2026-09-20 09:13:54"
+      "type": "C",
+      "button_text": "לרכישה",
+      "updated_at": "2026-09-20 10:25:35"
+    },
+    {
+      "title": "Corporate SUNday",
+      "details_raw": "בכל יום ראשון הטבה חדשה",
+      "price": "",
+      "value": "",
+      "image": "https://styleproductionpublic.blob.core.windows.net/images/FILE-20260101-1817V22NW8GP4MHS_350.jpg",
+      "link": "https://www.mycorporate.co.il/?aid=6",
+      "type": "D",
+      "button_text": "לפרטים",
+      "updated_at": "2026-09-20 10:25:35"
     }
   ],
   "title": "Corporate SUNDAY"
