@@ -1,16 +1,16 @@
 {
-  "last_checked": "2026-09-20 10:25:35",
+  "last_checked": "2026-09-27 00:41:28",
   "deals": [
     {
-      "title": "שובר לספר בסטימצקי",
-      "details_raw": "לרכישה ב-₪40\nבשווי ₪98",
-      "price": "לרכישה ב-₪40",
-      "value": "בשווי ₪98",
-      "image": "https://styleproductionpublic.blob.core.windows.net/files/560/FILE-20180108-0722HQXMJBPAA6ZW_350.jpg",
-      "link": "https://www.mycorporate.co.il/?page=Benefit&uuid=C1028F64-94B7-4056-B3B4-5AE1FF68",
+      "title": "כרטיס ללונה פארק",
+      "details_raw": "לרכישה ב- ₪98\nבמקום ₪149",
+      "price": "לרכישה ב- ₪98",
+      "value": "",
+      "image": "https://styleproductionpublic.blob.core.windows.net/images/FILE-20250902-16311YPFC6SS7AQA_350.jpg",
+      "link": "https://www.mycorporate.co.il/?page=Benefit&uuid=8D9AB620-3E36-45B5-A6DD-1A2BDBF4",
       "type": "C",
       "button_text": "לרכישה",
-      "updated_at": "2026-09-20 10:25:35"
+      "updated_at": "2026-09-27 00:41:28"
     },
     {
       "title": "Corporate SUNday",
@@ -21,7 +21,7 @@
       "link": "https://www.mycorporate.co.il/?aid=6",
       "type": "D",
       "button_text": "לפרטים",
-      "updated_at": "2026-09-20 10:25:35"
+      "updated_at": "2026-09-27 00:41:28"
     }
   ],
   "title": "Corporate SUNDAY"
