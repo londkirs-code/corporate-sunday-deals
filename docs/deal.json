@@ -1,17 +1,6 @@
 {
-  "last_checked": "2026-10-04 02:41:05",
+  "last_checked": "2026-10-04 06:47:39",
   "deals": [
-    {
-      "title": "Corporate SUNday",
-      "details_raw": "בכל יום ראשון הטבה חדשה",
-      "price": "",
-      "value": "",
-      "image": "https://styleproductionpublic.blob.core.windows.net/images/FILE-20260101-1817V22NW8GP4MHS_350.jpg",
-      "link": "https://www.mycorporate.co.il/?aid=6",
-      "type": "D",
-      "button_text": "לפרטים",
-      "updated_at": "2026-10-04 02:41:05"
-    },
     {
       "title": "תו קניה לרשת Foot Locker",
       "details_raw": "ב-₪130 בשווי ₪200\nכולל כפל מבצעים",
@@ -21,7 +10,18 @@
       "link": "https://www.mycorporate.co.il/?page=Benefit&uuid=C77A59A5-1FFC-435A-B741-68956FFA",
       "type": "C",
       "button_text": "לרכישה",
-      "updated_at": "2026-10-04 02:41:05"
+      "updated_at": "2026-10-04 06:47:39"
+    },
+    {
+      "title": "Corporate SUNday",
+      "details_raw": "בכל יום ראשון הטבה חדשה",
+      "price": "",
+      "value": "",
+      "image": "https://styleproductionpublic.blob.core.windows.net/images/FILE-20260101-1817V22NW8GP4MHS_350.jpg",
+      "link": "https://www.mycorporate.co.il/?aid=6",
+      "type": "D",
+      "button_text": "לפרטים",
+      "updated_at": "2026-10-04 06:47:39"
     }
   ],
   "title": "Corporate SUNDAY"
