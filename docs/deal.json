@@ -1,6 +1,17 @@
 {
-  "last_checked": "2026-10-11 06:23:51",
+  "last_checked": "2026-10-18 01:59:08",
   "deals": [
+    {
+      "title": "כרטיס לסרט ב- פלאנט/רב חן",
+      "details_raw": "לרכישה ב-₪25\nבשווי ₪48",
+      "price": "לרכישה ב-₪25",
+      "value": "בשווי ₪48",
+      "image": "https://styleproductionpublic.blob.core.windows.net/files/560/FILE-20240826-1223G86GA47ZKF4L_350.jpg",
+      "link": "https://www.mycorporate.co.il/?page=Benefit&uuid=7393BCA6-3686-4E34-940A-D7DD9A0C",
+      "type": "C",
+      "button_text": "לרכישה",
+      "updated_at": "2026-10-18 01:59:08"
+    },
     {
       "title": "Corporate SUNday",
       "details_raw": "בכל יום ראשון הטבה חדשה",
@@ -10,18 +21,7 @@
       "link": "https://www.mycorporate.co.il/?aid=6",
       "type": "D",
       "button_text": "לפרטים",
-      "updated_at": "2026-10-11 06:23:51"
-    },
-    {
-      "title": "ארוחת בוקר זוגית \"קלאסי\"",
-      "details_raw": "במבחר מלונות ברשת פתאל",
-      "price": "",
-      "value": "",
-      "image": "https://styleproductionpublic.blob.core.windows.net/images/FILE-20260722-15071WBEVF8663PM_350.jpeg",
-      "link": "https://www.mycorporate.co.il/?page=Benefit&uuid=6C017997-04FF-4CCE-8B52-2E15F725",
-      "type": "C",
-      "button_text": "לרכישה",
-      "updated_at": "2026-10-11 06:23:51"
+      "updated_at": "2026-10-18 01:59:08"
     }
   ],
   "title": "Corporate SUNDAY"
