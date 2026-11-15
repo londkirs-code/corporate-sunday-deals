@@ -1,17 +1,6 @@
 {
-  "last_checked": "2026-11-08 05:52:02",
+  "last_checked": "2026-11-15 02:55:09",
   "deals": [
-    {
-      "title": "תו קנייה למותגי קבוצת FOX",
-      "details_raw": "ב-₪25 בשווי ₪50\nכולל כפל מבצעים",
-      "price": "",
-      "value": "ב-₪25 בשווי ₪50",
-      "image": "https://styleproductionpublic.blob.core.windows.net/images/FILE-20260901-1027GVDSP5K2ZYMT_350.jpg",
-      "link": "https://www.mycorporate.co.il/?page=Benefit&uuid=095BC499-571B-42E2-AC9E-7CCE8584",
-      "type": "C",
-      "button_text": "לרכישה",
-      "updated_at": "2026-11-08 05:52:02"
-    },
     {
       "title": "Corporate SUNday",
       "details_raw": "בכל יום ראשון הטבה חדשה",
@@ -21,7 +10,18 @@
       "link": "https://www.mycorporate.co.il/?aid=6",
       "type": "D",
       "button_text": "לפרטים",
-      "updated_at": "2026-11-08 05:52:02"
+      "updated_at": "2026-11-15 02:55:09"
+    },
+    {
+      "title": "שובר למחסני חשמל",
+      "details_raw": "לרכישה ב-₪200\nבשווי ₪250",
+      "price": "לרכישה ב-₪200",
+      "value": "בשווי ₪250",
+      "image": "https://styleproductionpublic.blob.core.windows.net/files/560/FILE-20231219-1148N574JSCCZTU9_350.jpg",
+      "link": "https://www.mycorporate.co.il/?page=Benefit&uuid=E93BB834-9F66-45EC-A777-DFC9B447",
+      "type": "C",
+      "button_text": "לרכישה",
+      "updated_at": "2026-11-15 02:55:09"
     }
   ],
   "title": "Corporate SUNDAY"
